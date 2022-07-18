@@ -1,0 +1,2729 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="">
+
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window._currentDevice = 'desktop';
+        window.Parameters = window.Parameters || {
+            AjaxContainer: 'div.dmBody',
+            WrappingContainer: 'div.dmOuter',
+            HomeUrl: 'https://www.jetpestcontrol.com/',
+            AccountUUID: 'c8f033a5b59b43a8b52dbf99f96e6551',
+            SystemID: 'US_DIRECT_PRODUCTION',
+            SiteAlias: 'be6f1ddd',
+            SiteId: '2121522',
+            SiteType: atob('RFVEQU9ORQ=='),
+            PublicationDate: 'Thu May 26 17:54:10 UTC 2022',
+            ExternalUid: null,
+            IsSiteMultilingual: false,
+            InitialPostAlias: '',
+            InitialDynamicItem: '',
+            InitialPageAlias: 'roach-exterminator',
+            InitialPageUuid: '9e563a60b72a4130a1d746f7f2189224',
+            InitialEncodedPageAlias: 'cm9hY2gtZXh0ZXJtaW5hdG9y',
+            CurrentPageUrl: '',
+            IsCurrentHomePage: false,
+            AllowAjax: false,
+            AfterAjaxCommand: null,
+            HomeLinkText: 'Back To Home',
+            UseGalleryModule: false,
+            CurrentThemeName: 'Layout Theme',
+            ThemeVersion: '6065',
+            DefaultPageAlias: '',
+            RemoveDID: true,
+            WidgetStyleID: null,
+            IsHeaderFixed: false,
+            IsHeaderSkinny: false,
+            IsBfs: true,
+            StorePageAlias: 'null',
+            StorePagesUrls: 'e30=',
+            IsNewStore: 'false',
+            StorePath: '',
+            StoreId: 'null',
+            StoreVersion: 0,
+            StoreBaseUrl: '',
+            StoreCleanUrl: true,
+            StoreDisableScrolling: true,
+            NotificationSubDomain: 'jetpestcontrol',
+            HasCustomDomain: true,
+            showCookieNotification: false,
+            cookiesNotificationMarkup: 'null',
+            translatedPageUrl: '',
+            isFastMigrationSite: false,
+            sidebarPosition: 'NA',
+            currentLanguage: 'en',
+            NavItems: '{}',
+            errors: {
+                general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+                password: 'Incorrect name/password combination',
+                tryAgain: 'Try again'
+            },
+            NavigationAreaParams: {
+                ShowBackToHomeOnInnerPages: true,
+                NavbarSize: -1,
+                NavbarLiveHomePage: 'https://www.jetpestcontrol.com/',
+                BlockContainerSelector: '.dmBody',
+                NavbarSelector: '#dmNav:has(a)',
+                SubNavbarSelector: '#subnav_main'
+            },
+            hasCustomCode: false,
+            planID: '7',
+            customTemplateId: 'null',
+            siteTemplateId: 'null',
+            productId: 'DM_DIRECT',
+            disableTracking: false,
+            pageType: 'FROM_SCRATCH',
+            isRuntimeServer: true,
+            siteCacheKey: '1653587676639_be6f1ddd',
+            siteInfo: null,
+        };
+
+        window.Parameters.LayoutID = {};
+        window.Parameters.LayoutID[window._currentDevice] = 6;
+        window.Parameters.LayoutVariationID = {};
+        window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Injecting site-wide to the head -->
+
+
+
+
+    <!-- End Injecting site-wide to the head -->
+
+    <!-- Inject secured cdn script -->
+
+
+    <!-- ========= Meta Tags ========= -->
+    <!-- PWA settings -->
+    <script>
+        function toHash(str) {
+            var hash = 5381, i = str.length;
+            while (i) {
+                hash = hash * 33 ^ str.charCodeAt(--i)
+            }
+            return hash >>> 0
+        }
+    </script>
+    <script>
+        (function (global) {
+            //const cacheKey = global.cacheKey;
+            const isOffline = 'onLine' in navigator && navigator.onLine === false;
+            const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+            if (isOffline) {
+                console.log('offline mode');
+            }
+            if (!hasServiceWorkerSupport) {
+                console.log('service worker is not supported');
+            }
+            if (hasServiceWorkerSupport && !isOffline) {
+                window.addEventListener('load', function () {
+                    const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+                    navigator.serviceWorker
+                        .register(serviceWorkerPath, { scope: './' })
+                        .then(
+                            function (registration) {
+                                // Registration was successful
+                                console.log(
+                                    'ServiceWorker registration successful with scope: ',
+                                    registration.scope
+                                );
+                            },
+                            function (err) {
+                                // registration failed :(
+                                console.log('ServiceWorker registration failed: ', err);
+                            }
+                        )
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                });
+
+                // helper function to refresh the page
+                var refreshPage = (function () {
+                    var refreshing;
+                    return function () {
+                        if (refreshing) return;
+                        // prevent multiple refreshes
+                        var refreshkey = 'refreshed' + location.href;
+                        var prevRefresh = localStorage.getItem(refreshkey);
+                        if (prevRefresh) {
+                            localStorage.removeItem(refreshkey);
+                            if (Date.now() - prevRefresh < 30000) {
+                                return; // dont go into a refresh loop
+                            }
+                        }
+                        refreshing = true;
+                        localStorage.setItem(refreshkey, Date.now());
+                        console.log('refereshing page');
+                        window.location.reload();
+                    };
+                })();
+
+                function messageServiceWorker(data) {
+                    return new Promise(function (resolve, reject) {
+                        if (navigator.serviceWorker.controller) {
+                            var worker = navigator.serviceWorker.controller;
+                            var messageChannel = new MessageChannel();
+                            messageChannel.port1.onmessage = replyHandler;
+                            worker.postMessage(data, [messageChannel.port2]);
+                            function replyHandler(event) {
+                                resolve(event.data);
+                            }
+                        } else {
+                            resolve();
+                        }
+                    });
+                }
+            }
+        })(window);
+    </script>
+    <!-- Add manifest -->
+    <!-- End PWA settings -->
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta charset="utf-8">
+
+    <link rel="canonical" href="https://www.jetpestcontrol.com/roach-exterminator">
+
+    <meta id="view" name="viewport"
+        content=", initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--Add favorites icons-->
+
+    <link rel="apple-touch-icon" href="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/5757.png" />
+
+    <link rel="icon" type="image/x-icon"
+        href="https://irp.cdn-website.com/be6f1ddd/site_favicon_16_1633380913527.ico" />
+
+    <!-- End favorite icons -->
+
+    <link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin />
+
+
+
+
+
+    <!-- render the required CSS and JS in the head section -->
+    <script>
+        window.SystemID = 'US_DIRECT_PRODUCTION';
+
+        if (!window.dmAPI) {
+            window.dmAPI = {
+                registerExternalRuntimeComponent: function () {
+                },
+                getCurrentDeviceType: function () {
+                    return window._currentDevice;
+                }
+            };
+        }
+
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (fn) {
+                setTimeout(fn, 0);
+            }
+        }
+
+        function loadCSS(link) {
+            try {
+                var urlParams = new URLSearchParams(window.location.search);
+                var noCSS = !!urlParams.get('nocss');
+                var cssTimeout = urlParams.get('cssTimeout') || 0;
+
+                if (noCSS) {
+                    return;
+                }
+                requestIdleCallback(function () {
+                    window.setTimeout(function () {
+                        link.onload = null;
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css'
+                    }, parseInt(cssTimeout, 10));
+                });
+            } catch (e) {/* Never fail - this is just a tool for measurements */ }
+        }
+
+    </script>
+    <style id="forceCssIncludes">
+        /* This file is auto-generated from a `scss` file with the same name */
+
+        .videobgwrapper {
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            border-radius: inherit
+        }
+
+        .videobgframe {
+            position: absolute;
+            width: 101%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            object-fit: fill
+        }
+
+        #dm video.videobgframe {
+            margin: 0
+        }
+
+        .dmMobileBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done) {
+            min-height: 80vh
+        }
+
+        .dmDesktopBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done) {
+            min-height: 45vh
+        }
+
+        #dm [data-show-on-page-only] {
+            display: none !important
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function loadCSS(link) {
+            try {
+                var urlParams = new URLSearchParams(window.location.search);
+                var noCSS = !!urlParams.get('nocss');
+                var cssTimeout = urlParams.get('cssTimeout') || 0;
+
+                if (noCSS) {
+                    return;
+                }
+                requestIdleCallback(function () {
+                    window.setTimeout(function () {
+                        link.onload = null;
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css'
+                    }, parseInt(cssTimeout, 10));
+                });
+            } catch (e) {/* Never fail - this is just a tool for measurements */ }
+        }
+    </script>
+
+    <link type="text/css" rel="stylesheet"
+        href="https://irp.cdn-website.com/fonts/css?family=Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Lobster:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Lato:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fjalla+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=swap" />
+
+
+
+
+    <!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+    <link rel="stylesheet" type="text/css"
+        href="https://static.cdn-website.com/mnlt/production/2564/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css" />
+
+    <!-- End of RT CSS Include -->
+
+
+
+
+    <link type="text/css" rel="stylesheet"
+        href="https://irp.cdn-website.com/WIDGET_CSS/production_2564/b7335f05cb21992245d201920748f56d.css"
+        id="widgetCSS" />
+
+
+
+    <!-- Support `img` size attributes -->
+    <style>
+        img[width][height] {
+            height: auto;
+        }
+    </style>
+
+    <!-- Support showing sticky element on page only -->
+    <style>
+        body[data-page-alias="roach-exterminator"] #dm [data-show-on-page-only="roach-exterminator"] {
+            display: block !important;
+        }
+    </style>
+
+    <!-- This is populated in Ajax navigation -->
+    <style id="pageAdditionalWidgetsCss" type="text/css">
+    </style>
+
+
+
+
+    <!-- Site CSS -->
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/be6f1ddd/files/be6f1ddd_1.min.css?v=244"
+        id="siteGlobalCss" />
+
+
+
+    <style id="customWidgetStyle" type="text/css">
+        .widget-1f5975 .copyright {
+            font-size: 13px;
+            display: flex;
+            text-align: left;
+            justify-content: flex-start;
+        }
+    </style>
+    <style id="innerPagesStyle" type="text/css">
+
+    </style>
+
+    <style id="additionalGlobalCss" type="text/css">
+    </style>
+
+    <style id="pagestyle" type="text/css">
+        *#dm *.dmBody div.u_1965312173 {
+            background-color: rgba(255, 255, 255, 1) !important;
+            background-repeat: no-repeat !important;
+            background-image: url(https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/bugs400-2880w.png) !important;
+            background-size: cover !important;
+        }
+
+        *#dm *.dmBody *.u_1965312173:before {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody *.u_1965312173.before {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody *.u_1965312173>.bgExtraLayerOverlay {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody div.u_1965312173:before {
+            opacity: 0.9 !important;
+        }
+
+        *#dm *.dmBody div.u_1965312173.before {
+            opacity: 0.9 !important;
+        }
+
+        *#dm *.dmBody div.u_1965312173>.bgExtraLayerOverlay {
+            opacity: 0.9 !important;
+        }
+
+        *#dm *.dmBody nav.u_1187815373 {
+            color: white !important;
+        }
+
+        *#dm *.dmBody div.u_1897017903 {
+            background-color: rgba(255, 255, 255, 1) !important;
+            background-repeat: no-repeat !important;
+            background-image: url(https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/wallpaper-2880w.jpg) !important;
+            background-size: cover !important;
+        }
+
+        *#dm *.dmBody *.u_1897017903:before {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody *.u_1897017903.before {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody *.u_1897017903>.bgExtraLayerOverlay {
+            opacity: 0.5 !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        *#dm *.dmBody div.u_1897017903:before {
+            opacity: 0.8 !important;
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+
+        *#dm *.dmBody div.u_1897017903.before {
+            opacity: 0.8 !important;
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+
+        *#dm *.dmBody div.u_1897017903>.bgExtraLayerOverlay {
+            opacity: 0.8 !important;
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+
+        *#dm *.dmBody div.u_1205783768 {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 11px 0px !important;
+            -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 11px 0px !important;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 11px 0px !important;
+            border-color: rgba(255, 255, 255, 1) !important;
+            border-width: 1px !important;
+            border-style: solid !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507:hover {
+            background-color: rgba(0, 0, 0, 1) !important;
+            background-image: none !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507.hover {
+            background-color: rgba(0, 0, 0, 1) !important;
+            background-image: none !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507 {
+            background-color: rgba(0, 0, 0, 0) !important;
+            border-color: rgba(237, 27, 36, 1) !important;
+            border-radius: 6px !important;
+            -moz-border-radius: 6px !important;
+            -webkit-border-radius: 6px !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507 .iconBg {
+            display: inline !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507 span.icon {
+            color: rgb(247, 247, 247) !important;
+        }
+    </style>
+
+    <style id="pagestyleDevice" type="text/css">
+        *.dmTabletBody #dm .d-page-1830755010 DIV.dmInner {
+            background-attachment: initial !important;
+        }
+
+        *#dm .d-page-1830755010 DIV.dmInner {
+            background-repeat: repeat !important;
+            background-image: none !important;
+            background-size: auto !important;
+            background-attachment: fixed !important;
+            background-color: rgba(51, 51, 51, 1) !important;
+        }
+
+        *#dm .d-page-1830755010 DIV#dmSlideRightNavRight {
+            background-repeat: repeat !important;
+            background-image: none !important;
+            background-size: auto !important;
+            background-attachment: initial !important;
+            background-color: rgba(51, 51, 51, 1) !important;
+        }
+
+        *#dm *.dmBody div.u_1201718297 {
+            margin-left: 0px !important;
+            padding-top: 0px !important;
+            padding-left: 0px !important;
+            padding-bottom: 0px !important;
+            margin-top: 200px !important;
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        *#dm *.dmBody div.u_1628651637 {
+            width: 500px !important;
+            display: block !important;
+            float: none !important;
+            top: 0px !important;
+            left: 0 !important;
+            position: relative !important;
+            padding-top: 0px !important;
+            padding-left: 0px !important;
+            padding-bottom: 0px !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            max-width: 100% !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            padding-right: 0px !important;
+            min-width: 0 !important;
+            text-align: center !important;
+            height: auto !important;
+        }
+
+        *#dm *.dmBody div.u_1965312173 {
+            background-repeat: repeat !important;
+            background-size: auto !important;
+            background-attachment: fixed !important;
+            background-position: 50% 50% !important;
+            margin-left: 0px !important;
+            padding-top: 50px !important;
+            padding-left: 0px !important;
+            padding-bottom: 50px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+            padding-right: 0px !important;
+            width: auto !important;
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            position: relative !important;
+            height: auto !important;
+            max-width: 100% !important;
+            min-width: 0 !important;
+            text-align: center !important;
+        }
+
+        *#dm *.dmBody div.u_1205783768 {
+            margin-left: 0px !important;
+            padding-top: 40px !important;
+            padding-left: 40px !important;
+            padding-bottom: 40px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+            padding-right: 40px !important;
+        }
+
+        *#dm *.dmBody div.u_1425272106 {
+            margin-left: 0px !important;
+            padding-top: 0px !important;
+            padding-left: 0px !important;
+            padding-bottom: 0px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507 {
+            margin-left: 419px !important;
+            padding-top: 0px !important;
+            padding-left: 0px !important;
+            padding-bottom: 0px !important;
+            margin-top: 25px !important;
+            margin-bottom: 10px !important;
+            margin-right: 419px !important;
+            padding-right: 0px !important;
+        }
+
+        *#dm *.dmBody a.u_1646049507 span.text {
+            font-size: 22px !important;
+        }
+
+        *#dm *.dmBody div.u_1897017903 {
+            margin-left: 0px !important;
+            padding-top: 40px !important;
+            padding-left: 40px !important;
+            padding-bottom: 40px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+            padding-right: 40px !important;
+            width: auto !important;
+            background-attachment: fixed !important;
+            background-position: 50% 50% !important;
+        }
+    </style>
+
+    <!-- Flex Sections CSS -->
+
+
+
+
+
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-22,
+        .size-22,
+        .size-22>font {
+            font-size: 22px !important;
+        }
+
+        .font-size-48,
+        .size-48,
+        .size-48>font {
+            font-size: 48px !important;
+        }
+
+        .font-size-48,
+        .size-48,
+        .size-48>font {
+            font-size: 48px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+
+        .font-size-20,
+        .size-20,
+        .size-20>font {
+            font-size: 20px !important;
+        }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+
+
+
+
+
+
+    <style id="hideAnimFix">
+        .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']),
+        .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+            visibility: hidden;
+        }
+
+        .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']),
+        .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+            visibility: hidden !important;
+        }
+    </style>
+
+
+
+
+    <!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+
+    <link type="application/rss+xml" rel="alternate" href="https://www.jetpestcontrol.com//feed/rss2" />
+    <link type="application/atom+xml" rel="alternate" href="https://www.jetpestcontrol.com//feed/atom" />
+    <title>
+
+        Westchester, 5 Boro’s And L.I. #1 Rated Roach Control
+
+    </title>
+    <meta name="description"
+        content="On Long Island, Westchester County and the five boroughs, the top choice for roach relief is Jet Pest Control." />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Westchester, 5 Boro’s And L.I.  #1 Rated Roach Control" />
+    <meta name="twitter:description"
+        content="On Long Island, Westchester County and the five boroughs, the top choice for roach relief is Jet Pest Control." />
+    <meta name="twitter:image" content="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/200200-1920w.png" />
+    <meta property="og:description"
+        content="On Long Island, Westchester County and the five boroughs, the top choice for roach relief is Jet Pest Control." />
+    <meta property="og:title" content="Westchester, 5 Boro’s And L.I.  #1 Rated Roach Control" />
+    <meta property="og:image" content="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/200200-1920w.png" />
+
+
+
+
+    <!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="roach-exterminator"
+    class="supportsFontIcons supportsFontIcons dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac dmLargeBody responsiveTablet "
+    style="padding:0;margin:0;">
+
+
+
+    <!-- ========= Site Content ========= -->
+    <div id="dm" class='dmwr'>
+
+        <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+            <div dmwrapped="true" id="1254744648">
+                <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger"
+                    class="runtime-module-container dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 dmPageBody d-page-1830755010 dmFreeHeader"
+                    id="dm-outer-wrapper" data-page-class="1830755010" data-buttonstyle="ROUND_SIDES" data-soch="true"
+                    data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex">
+                    <div id="dmStyle_outerContainer" class="dmOuter">
+                        <div id="dmStyle_innerContainer" class="dmInner">
+                            <div class="dmLayoutWrapper standard-var dmStandardDesktop">
+                                <div id="site_content">
+                                    <div class="p_hfcontainer showOnMedium">
+                                        <div id="hamburger-drawer" class="hamburger-drawer layout-drawer"
+                                            layout="4821f93654f44cd4b3564a9fb45461dd===header" data-origin="top"
+                                            data-auto-height="true">
+                                            <div class="u_1254778546 dmRespRow" style="text-align: center;"
+                                                id="1254778546">
+                                                <div class="dmRespColsWrapper" id="1601640828">
+                                                    <div class="u_1235156956 dmRespCol small-12 medium-12 large-12 empty-column"
+                                                        id="1235156956"></div>
+                                                </div>
+                                            </div>
+                                            <div class="u_1035381850 dmRespRow middleDrawerRow"
+                                                style="text-align: center;" id="1035381850">
+                                                <div class="dmRespColsWrapper" id="1678812029">
+                                                    <div class="dmRespCol small-12 u_1113556055 medium-6 large-6"
+                                                        id="1113556055">
+                                                        <nav class="u_1336138905 effect-forward main-navigation unifiednav dmLinksMenu"
+                                                            role="navigation" layout-main="vertical_nav_layout_1"
+                                                            layout-sub="" data-show-vertical-sub-items="HIDE"
+                                                            id="1336138905" dmle_extension="onelinksmenu"
+                                                            data-element-type="onelinksmenu" data-logo-src="" alt=""
+                                                            data-nav-structure="VERTICAL" wr="true" icon="true"
+                                                            surround="true" adwords="" navigation-id="unifiedNav">
+                                                            <ul class="unifiednav__container  "
+                                                                data-auto="navigation-pages">
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a href="/"
+                                                                        class="unifiednav__item  dmUDNavigationItem_00  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a href="#"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101147805  unifiednav__item_has-sub-nav"
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                        data-depth="0" data-auto="sub-pages">
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/#AboutUs"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101793203  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           About Us
+          " data-auto="page-text-style">About Us<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/privacy-policy"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101280382  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Privacy Policy
+          " data-auto="page-text-style">Privacy Policy<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="/#Services"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101508606  unifiednav__item_has-sub-nav"
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Services
+        " data-auto="page-text-style">Services<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                        data-depth="0" data-auto="sub-pages">
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/ants"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101422677  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Ants
+          " data-auto="page-text-style">Ants<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/bed-bugs"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101512179  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Bed Bugs
+          " data-auto="page-text-style">Bed Bugs<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/roach-exterminator"
+                                                                                class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101913227  "
+                                                                                target="" data-target-page-alias=""
+                                                                                data-auto="selected-page"> <span
+                                                                                    class="nav-item-text "
+                                                                                    data-link-text="
+           Roaches
+          " data-auto="page-text-style">Roaches<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/rodents"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101461926  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Rodents
+          " data-auto="page-text-style">Rodents<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/fleas"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101319533  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Fleas
+          " data-auto="page-text-style">Fleas<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/other-pests"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101799595  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Other Pests
+          " data-auto="page-text-style">Other Pests<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="/blog"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101124249  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Blog
+        " data-auto="page-text-style">Blog<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a href="#"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101141498  unifiednav__item_has-sub-nav"
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                        data-depth="0" data-auto="sub-pages">
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/contact-info"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101491514  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Contact Info
+          " data-auto="page-text-style">Contact Info<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="/contact-info#ServiceArea"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101602796  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+           Service Areas
+          " data-auto="page-text-style">Service Areas<span class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="/#Reviews"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101182968  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Reviews
+        " data-auto="page-text-style">Reviews<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="/what-is-it"
+                                                                        class="unifiednav__item  dmUDNavigationItem_01010172904  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         What Is It
+        " data-auto="page-text-style">What Is It<span class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="dmRespCol small-12 u_1717902722 medium-6 large-6"
+                                                        id="1717902722">
+                                                        <h3 class="dmNewParagraph" data-element-type="paragraph"
+                                                            id="1592662244" style="transition: opacity 1s ease-in-out;">
+                                                            <span><span style="" class="lh-1 font-size-22">
+                                                                    <font style="color: rgb(255, 255, 255);"><b>Follow
+                                                                            Us</b></font>
+                                                                </span></span>
+                                                        </h3>
+                                                        <div class="u_1604411840 align-center text-align-center dmSocialHub"
+                                                            id="1604411840" dmle_extension="social_hub"
+                                                            data-element-type="social_hub" wr="true" networks=""
+                                                            icon="true" surround="true" adwords="">
+                                                            <div class="socialHubWrapper">
+                                                                <div class="socialHubInnerDiv "> <a
+                                                                        href="https://facebook.com/JetPest"
+                                                                        target="_blank" dm_dont_rewrite_url="true"
+                                                                        onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)">
+                                                                        <span
+                                                                            class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style3"
+                                                                            data-hover-effect=""></span>
+                                                                    </a>
+                                                                    <a href="https://google.com/maps/place/"
+                                                                        target="_blank" dm_dont_rewrite_url="true"
+                                                                        onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;GoogleMyBusiness&apos;)">
+                                                                        <span
+                                                                            class="dmSocialGoogleMyBusiness dm-social-icons-google-my-business oneIcon socialHubIcon style3"
+                                                                            data-hover-effect=""></span>
+                                                                    </a>
+                                                                    <a href="https://www.instagram.com/jetpestcontrol/"
+                                                                        target="_blank" dm_dont_rewrite_url="true"
+                                                                        onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)">
+                                                                        <span
+                                                                            class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style3"
+                                                                            data-hover-effect=""></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="u_1520673272 dmDividerWrapper clearfix"
+                                                            data-element-type="dDividerId" data-layout="divider-style-1"
+                                                            data-widget-version="2" id="1520673272">
+                                                            <hr class="dmDivider"
+                                                                style="border-width:2px; border-top-style:solid; color:grey;"
+                                                                id="1776771833" />
+                                                        </div>
+                                                        <a data-display-type="block"
+                                                            class="u_1509415075 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient"
+                                                            file="false"
+                                                            href="https://clienthub.getjobber.com/client_hubs/0f8a4bce-b72e-403d-bb08-4a3ee566bd5b/public/work_request/new"
+                                                            data-element-type="dButtonLinkId" id="1509415075"
+                                                            data-buttonstyle="FLAT_ROUND_ICON"
+                                                            icon-name="icon-long-arrow-right" target="_blank"> <span
+                                                                class="iconBg" id="1350494569"> <span
+                                                                    class="icon hasFontIconstar hasFontIcon icon-long-arrow-right"
+                                                                    id="1507390003"></span>
+                                                            </span>
+                                                            <span class="text" id="1624289117">Request Free
+                                                                Estimate</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="u_1242479492 dmRespRow" style="text-align: center;"
+                                                id="1242479492">
+                                                <div class="dmRespColsWrapper" id="1609117371">
+                                                    <div class="u_1627026518 dmRespCol small-12 medium-12 large-12 empty-column"
+                                                        id="1627026518"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div>
+                                    </div>
+                                    <div class="site_content">
+                                        <div id="hamburger-header-container"
+                                            class="showOnMedium hamburger-header-container p_hfcontainer">
+                                            <div id="hamburger-header" class="hamburger-header p_hfcontainer"
+                                                layout="44dc38f951e9489490b055748e10ba9f===header" has-shadow="true">
+                                                <div class="u_1705692124 dmRespRow" style="text-align: center;"
+                                                    id="1705692124">
+                                                    <div class="dmRespColsWrapper" id="1469942216">
+                                                        <div class="dmRespCol small-12 u_1655486006 large-4 medium-4"
+                                                            id="1655486006">
+                                                            <div class="align-center text-align-center u_1168658129 dmSocialHub"
+                                                                id="1168658129" dmle_extension="social_hub"
+                                                                data-element-type="social_hub" wr="true" networks=""
+                                                                icon="true" surround="true" adwords="">
+                                                                <div class="socialHubWrapper">
+                                                                    <div class="socialHubInnerDiv "> <a
+                                                                            href="https://facebook.com/JetPest"
+                                                                            target="_blank" dm_dont_rewrite_url="true"
+                                                                            onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)">
+                                                                            <span
+                                                                                class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5"
+                                                                                data-hover-effect=""></span>
+                                                                        </a>
+                                                                        <a href="https://google.com/maps/place/"
+                                                                            target="_blank" dm_dont_rewrite_url="true"
+                                                                            onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;GoogleMyBusiness&apos;)">
+                                                                            <span
+                                                                                class="dmSocialGoogleMyBusiness dm-social-icons-google-my-business oneIcon socialHubIcon style5"
+                                                                                data-hover-effect=""></span>
+                                                                        </a>
+                                                                        <a href="https://www.instagram.com/jetpestcontrol/"
+                                                                            target="_blank" dm_dont_rewrite_url="true"
+                                                                            onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)">
+                                                                            <span
+                                                                                class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5"
+                                                                                data-hover-effect=""></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dmRespCol small-12 large-4 medium-4"
+                                                            id="1327658154">
+                                                            <div class="u_1466170135 imageWidget align-center"
+                                                                data-element-type="image" data-widget-type="image"
+                                                                id="1466170135"> <a href="/" id="1704856836"
+                                                                    file="false"><img
+                                                                        src="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/400png-1920w.png"
+                                                                        id="1398168158" class=""
+                                                                        data-dm-image-path="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/400png.png"
+                                                                        alt="jet-pest-control-logo-mobile"
+                                                                        onerror="handleImageLoadError(this)" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dmRespCol large-4 medium-4 small-12"
+                                                            id="1033103427"> <a data-display-type="block"
+                                                                class="u_1089302783 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient"
+                                                                file="false" href="tel:718-710-0330" id="1089302783"
+                                                                data-element-type="dButtonLinkId"
+                                                                data-buttonstyle="FLAT_ROUND_ICON"
+                                                                icon-name="icon-phone"> <span class="iconBg"
+                                                                    id="1032244307"> <span
+                                                                        class="icon hasFontIconstar hasFontIcon icon-phone"
+                                                                        id="1871445942"></span>
+                                                                </span>
+                                                                <span class="text" id="1735598334">718-710-0330</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge">
+                                            <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer"
+                                                freeheader="true"
+                                                headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5"
+                                                data-scrollable-target="body" data-scrollable-target-threshold="1"
+                                                data-scroll-responder-id="1" preserve-sticky-header="true"
+                                                logo-size-target="80%"
+                                                layout="7f3c1de367df47d5b45ab63d33101c7b===header"
+                                                mini-header-show-only-navigation-row="true">
+                                                <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch"
+                                                    id="1709005236">
+                                                    <div class="dmRespRow u_1459309967 fullBleedChanged fullBleedMode"
+                                                        id="1459309967">
+                                                        <div class="dmRespColsWrapper" id="1295303407">
+                                                            <div class="u_1423366346 dmRespCol small-12 large-2 medium-2"
+                                                                id="1423366346">
+                                                                <div class="align-center text-align-center u_1209853345 dmSocialHub"
+                                                                    id="1209853345" dmle_extension="social_hub"
+                                                                    data-element-type="social_hub" wr="true" networks=""
+                                                                    icon="true" surround="true" adwords="">
+                                                                    <div class="socialHubWrapper">
+                                                                        <div class="socialHubInnerDiv "> <a
+                                                                                href="https://facebook.com/JetPest"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                            <a href="https://google.com/maps/place/"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;GoogleMyBusiness&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialGoogleMyBusiness dm-social-icons-google-my-business oneIcon socialHubIcon style5"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                            <a href="https://www.instagram.com/jetpestcontrol/"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="u_1711380501 dmRespCol small-12 large-4 medium-4"
+                                                                id="1711380501"> <a
+                                                                    class="default dmDefaultGradient align-center u_1616926168 dmEmail dmWidget dmNoMark dmWwr"
+                                                                    href="mailto:info@jetpestcontrol.com"
+                                                                    contenteditable="false"
+                                                                    onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'be6f1ddd', this);"
+                                                                    id="1616926168" dmle_extension="emailextension"
+                                                                    data-element-type="emailextension"
+                                                                    data-buttonstyle="FLAT_ROUND_ICON" wr="true"
+                                                                    data-display-type="block" icon="true"
+                                                                    surround="true"
+                                                                    description="info@jetpestcontrol.com" adwords=""
+                                                                    icon-name="icon-envelope-alt"
+                                                                    email="info@jetpestcontrol.com"> <span
+                                                                        class="iconBg"> <span
+                                                                            class="icon hasFontIcon icon-envelope-alt"></span>
+                                                                    </span>
+                                                                    <span class="text">info@jetpestcontrol.com</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dmRespCol small-12 large-3 medium-3"
+                                                                id="1018219871">
+                                                                <div class="dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1520984430"
+                                                                    style="transition: opacity 1s ease-in-out 0s;">
+                                                                    <p><span
+                                                                            style="color: rgb(255, 255, 255); display: initial; font-family: Lato; font-weight: 400;">Se
+                                                                            Habla Espa&ntilde;ol</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dmRespCol large-3 medium-3 small-12"
+                                                                id="1694167437"> <a data-display-type="block"
+                                                                    class="u_1067670680 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient"
+                                                                    file="false"
+                                                                    href="https://clienthub.getjobber.com/client_hubs/0f8a4bce-b72e-403d-bb08-4a3ee566bd5b/public/work_request/new"
+                                                                    data-element-type="dButtonLinkId" id="1067670680"
+                                                                    data-buttonstyle="FLAT_ROUND_ICON"
+                                                                    icon-name="dm-icon-redo" target="_blank"> <span
+                                                                        class="iconBg" id="1187386448"> <span
+                                                                            class="icon hasFontIconstar hasFontIcon dm-icon-redo"
+                                                                            id="1511720286"></span>
+                                                                    </span>
+                                                                    <span class="text" id="1763253280">Free
+                                                                        Estimate</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dmRespRow dmDefaultListContentRow u_1691270432 fullBleedChanged fullBleedMode"
+                                                        style="text-align:center" id="1691270432">
+                                                        <div class="dmRespColsWrapper" id="1597531419">
+                                                            <div class="u_1101527913 small-12 dmRespCol large-2 medium-2"
+                                                                id="1101527913">
+                                                                <div class="u_1163094578 imageWidget align-center"
+                                                                    data-widget-type="image" id="1163094578"
+                                                                    data-element-type="image"><img
+                                                                        src="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/176logot-1920w.png"
+                                                                        id="1496386982" class=""
+                                                                        data-dm-image-path="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/176logot.png"
+                                                                        alt="jet-pest-control-logo-header"
+                                                                        onerror="handleImageLoadError(this)" /></div>
+                                                            </div>
+                                                            <div class="u_1080822698 dmRespCol small-12 large-8 medium-8"
+                                                                id="1080822698">
+                                                                <nav class="u_1187815373 effect-float main-navigation unifiednav dmLinksMenu"
+                                                                    role="navigation"
+                                                                    layout-main="horizontal_nav_layout_2"
+                                                                    layout-sub="submenu_horizontal_2"
+                                                                    data-show-vertical-sub-items="HOVER" id="1187815373"
+                                                                    dmle_extension="onelinksmenu"
+                                                                    data-element-type="onelinksmenu" wr="true"
+                                                                    icon="true" surround="true" adwords=""
+                                                                    navigation-id="unifiedNav">
+                                                                    <ul class="unifiednav__container  "
+                                                                        data-auto="navigation-pages">
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="/"
+                                                                                class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  "
+                                                                                target="" data-target-page-alias=""
+                                                                                data-auto="selected-page"> <span
+                                                                                    class="nav-item-text "
+                                                                                    data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101147805  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="/#AboutUs"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101793203  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           About Us
+          " data-auto="page-text-style">About Us<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../privacy-policy/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101280382  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Privacy Policy
+          " data-auto="page-text-style">Privacy Policy<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="/#Services"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101508606  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Services
+        " data-auto="page-text-style">Services<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../ants/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101422677  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Ants
+          " data-auto="page-text-style">Ants<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../bed-bugs/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101512179  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Bed Bugs
+          " data-auto="page-text-style">Bed Bugs<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../roach-exterminator/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101913227  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Roaches
+          " data-auto="page-text-style">Roaches<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../rodents/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101461926  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Rodents
+          " data-auto="page-text-style">Rodents<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../fleas/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101319533  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Fleas
+          " data-auto="page-text-style">Fleas<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../other-pests/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101799595  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Other Pests
+          " data-auto="page-text-style">Other Pests<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="../blog/index.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101124249  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Blog
+        " data-auto="page-text-style">Blog<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101141498  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../contact-info/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101491514  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Contact Info
+          " data-auto="page-text-style">Contact Info<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../contact-info/index.html#ServiceArea"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101602796  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Service Areas
+          " data-auto="page-text-style">Service Areas<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="/#Reviews"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101182968  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Reviews
+        " data-auto="page-text-style">Reviews<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="../what-is-it/index.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_01010172904  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         What Is It
+        " data-auto="page-text-style">What Is It<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                            <div class="u_1370185677 dmRespCol small-12 large-2 medium-2"
+                                                                id="1370185677"> <a data-display-type="block"
+                                                                    class="u_1977818426 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient"
+                                                                    file="false" href="tel:718-710-0330" id="1977818426"
+                                                                    data-element-type="dButtonLinkId"
+                                                                    data-buttonstyle="FLAT_ROUND_ICON"
+                                                                    icon-name="icon-phone"> <span class="iconBg"
+                                                                        id="1023129154"> <span
+                                                                            class="icon hasFontIconstar hasFontIcon icon-phone"
+                                                                            id="1477765072"></span>
+                                                                    </span>
+                                                                    <span class="text"
+                                                                        id="1957811703">718-710-0330</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div>
+                                        <div dmwrapped="true" id="1254744648"
+                                            class="dmBody u_dmStyle_template_roach-exterminator">
+                                            <div id="allWrapper" class="allWrapper">
+                                                <div id="dm_content" class="dmContent">
+                                                    <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1830755010">
+                                                        <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper"
+                                                            id="1775169014">
+                                                            <div class="u_1965312173 dmRespRow dmDefaultListContentRow hasBackgroundOverlay fullBleedChanged fullBleedMode"
+                                                                style="text-align:center" id="1965312173">
+                                                                <div class="dmRespColsWrapper" id="1376987244">
+                                                                    <div class="u_1672159378 small-12 dmRespCol large-6 medium-6"
+                                                                        id="1672159378">
+                                                                        <div class="u_1628651637 imageWidget align-center"
+                                                                            data-element-type="image"
+                                                                            data-widget-type="image" id="1628651637"
+                                                                            data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblVwIn19"
+                                                                            data-anim-desktop="fadeInUp"> <a
+                                                                                id="1081899129"><img
+                                                                                    src="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/roachpage-1920w.png"
+                                                                                    alt="dead-roach-cartoon"
+                                                                                    id="1853762424" class=""
+                                                                                    data-dm-image-path="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/roachpage.png"
+                                                                                    onerror="handleImageLoadError(this)" /></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="u_1675466479 dmRespCol small-12 large-6 medium-6"
+                                                                        id="1675466479">
+                                                                        <div class="dmNewParagraph u_1201718297"
+                                                                            data-element-type="paragraph"
+                                                                            data-version="5" id="1201718297"
+                                                                            style="transition: opacity 1s ease-in-out 0s;"
+                                                                            data-uw-styling-context="true">
+                                                                            <h1 class="m-size-48"><span
+                                                                                    class="m-font-size-48"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: unset; font-weight: normal;">Cockroach
+                                                                                    Exterminator</span></h1>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dmRespRow u_1897017903 hasBackgroundOverlay"
+                                                                id="1897017903">
+                                                                <div class="dmRespColsWrapper" id="1560729297">
+                                                                    <div class="dmRespCol large-12 medium-12 small-12 u_1205783768"
+                                                                        id="1205783768">
+                                                                        <div class="dmNewParagraph u_1425272106"
+                                                                            data-element-type="paragraph"
+                                                                            data-version="5" id="1425272106"
+                                                                            style="transition: opacity 1s ease-in-out 0s;">
+                                                                            <p><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);"><span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">The
+                                                                                        New York City metropolitan area
+                                                                                        is famous for many things. There
+                                                                                        are the skyscrapers in
+                                                                                        Manhattan, pizza in Brooklyn,
+                                                                                        and the Yankees in the Bronx.
+                                                                                        However, there is one thing that
+                                                                                        you can find throughout the five
+                                                                                        boroughs, Long Island and
+                                                                                        Westchester, and that is
+                                                                                        roaches.</span>
+                                                                                </span><a
+                                                                                    href="https://www.thetravel.com/cities-worst-roach-infestation/"
+                                                                                    target="_blank"
+                                                                                    runtime_url="https://www.thetravel.com/cities-worst-roach-infestation/"
+                                                                                    type="url"
+                                                                                    style="display: unset; color: rgb(255, 255, 255); font-style: italic; text-decoration: underline;">New
+                                                                                    York City ranked #9</a><span
+                                                                                    class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">
+                                                                                    <span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">in
+                                                                                        cities with a roach infestation
+                                                                                        problem. An incredible 15.6% of
+                                                                                        residents reported an
+                                                                                        infestation.</span>
+                                                                                </span></p>
+                                                                            <p><span
+                                                                                    style="display: initial;"><br /></span>
+                                                                            </p>
+                                                                            <p><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);"><span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">People
+                                                                                        have been immigrating to this
+                                                                                        area for hundreds of years, and
+                                                                                        the melting pot has not been
+                                                                                        limited to humans. The
+                                                                                        six-legged nemesis has found its
+                                                                                        way here from across the globe.
+                                                                                        The German and American
+                                                                                        cockroach dominate the
+                                                                                        landscape, but five other
+                                                                                        species of roaches are thriving,
+                                                                                        the Oriental, Brown-Banded,
+                                                                                        Australian, Surinam, and the
+                                                                                        latest entry in the game, the
+                                                                                        Japanese. First discovered in
+                                                                                        2012 in NYC, what makes
+                                                                                        the</span>
+                                                                                </span><a
+                                                                                    href="https://www.pctonline.com/article/invasive-cockroach-periplaneta-japonica-new-york/"
+                                                                                    target="_blank"
+                                                                                    runtime_url="https://www.pctonline.com/article/invasive-cockroach-periplaneta-japonica-new-york/"
+                                                                                    type="url"
+                                                                                    style="display: unset; color: rgb(255, 255, 255); font-style: italic; text-decoration: underline;">Japanese
+                                                                                    Cockroach</a><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">
+                                                                                    <span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">so
+                                                                                        worrisome is that they can
+                                                                                        thrive in freezing temperatures
+                                                                                        outside, unlike most species.
+                                                                                        Like most invasive species, it
+                                                                                        is assumed they stowed away on a
+                                                                                        ship found their way into
+                                                                                        nurseries in the soil of
+                                                                                        ornamental plants.</span></span>
+                                                                            </p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">&nbsp;</span>
+                                                                            </p>
+                                                                            <p><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);"><span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">What
+                                                                                        makes the roach such a hardy
+                                                                                        creature? For starters, they
+                                                                                        date back to the</span>
+                                                                                </span><a
+                                                                                    href="https://www.haaretz.com/science-and-health/scientists-figure-out-the-origin-of-cockroaches-1.5804114"
+                                                                                    target="_blank"
+                                                                                    runtime_url="https://www.haaretz.com/science-and-health/scientists-figure-out-the-origin-of-cockroaches-1.5804114"
+                                                                                    type="url"
+                                                                                    style="display: unset; color: rgb(255, 255, 255); font-style: italic; text-decoration: underline;">Carboniferous
+                                                                                    period</a><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);"><span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">,
+                                                                                        which was about 350 million
+                                                                                        years ago. They developed before
+                                                                                        the continents, and that is why
+                                                                                        they are everywhere. In terms of
+                                                                                        evolution, they are light years
+                                                                                        ahead of us. It takes about a
+                                                                                        year or so for human babies to
+                                                                                        walk, and a one-day-old roach
+                                                                                        runs almost as fast as its
+                                                                                        parents, and that is 3 miles an
+                                                                                        hour.&nbsp; While it seems that
+                                                                                        they scramble about all
+                                                                                        willy-nilly, they are social
+                                                                                        creatures and, when it comes to
+                                                                                        food sources, make decisions
+                                                                                        collectively. They communicate
+                                                                                        with each other through the
+                                                                                        release of pheromones and
+                                                                                        buzzing, chirping, hissing and
+                                                                                        vibrations. They have been
+                                                                                        regarded as the first creature
+                                                                                        to perfect the art of</span>
+                                                                                </span><a
+                                                                                    href="https://owlcation.com/stem/The-Fascinating-Truth-about-the-Worlds-Oldest-Pests-Cockroaches"
+                                                                                    target="_blank"
+                                                                                    runtime_url="https://owlcation.com/stem/The-Fascinating-Truth-about-the-Worlds-Oldest-Pests-Cockroaches"
+                                                                                    type="url"
+                                                                                    style="display: unset; color: rgb(255, 255, 255); font-style: italic; text-decoration: underline;">self-powered
+                                                                                    flight</a><span class=""
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">
+                                                                                    <span
+                                                                                        style="display: unset; color: rgb(255, 255, 255);">by
+                                                                                        using two sets of soft wings.
+                                                                                        This gave them an incredible
+                                                                                        advantage in the search for food
+                                                                                        and the ability to evade
+                                                                                        predators. They have been sent
+                                                                                        into space by Russia and are the
+                                                                                        first species to produce
+                                                                                        offspring in
+                                                                                        space.</span></span></p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">&nbsp;</span>
+                                                                            </p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">It
+                                                                                    seems we are born with an innate
+                                                                                    fear of them, and through the ages,
+                                                                                    cultures have documented and
+                                                                                    commented on the insidious pest.
+                                                                                    Ancient Egyptians prayed to their
+                                                                                    God, Khnum, to banish the pest.
+                                                                                    Pliny The Elder, in ancient Rome,
+                                                                                    commented on the disgusting nature
+                                                                                    of the creature and their use in
+                                                                                    medicines. Captain John Smith of the
+                                                                                    Jamestown colony mentioned the
+                                                                                    &ldquo;cacarooch&rdquo; and its
+                                                                                    bad-smelling dung.&nbsp;</span></p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">&nbsp;</span>
+                                                                            </p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">With
+                                                                                    such a long and auspicious history,
+                                                                                    it is no wonder they are thriving
+                                                                                    today. Finding a few roaches in your
+                                                                                    home or business is usually a sign
+                                                                                    of a much larger problem. Because
+                                                                                    they reproduce so quickly, this is
+                                                                                    not a pest you want to attempt to
+                                                                                    get rid of yourself. They have
+                                                                                    become resistant to many
+                                                                                    over-the-counter products, and by
+                                                                                    the time you realize your treatment
+                                                                                    isn&rsquo;t working, you have a
+                                                                                    full-blown infestation.</span></p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">&nbsp;</span>
+                                                                            </p>
+                                                                            <p><span
+                                                                                    style="display: unset; color: rgb(255, 255, 255);">On
+                                                                                    Long Island, Westchester County and
+                                                                                    the five boroughs, the top choice
+                                                                                    for roach relief is Jet Pest
+                                                                                    Control. Our highly-trained
+                                                                                    technicians are well versed in the
+                                                                                    latest pest control methods and are
+                                                                                    equipped to handle all of your pest
+                                                                                    control needs. Give us a call today
+                                                                                    and get started on a roach-free
+                                                                                    environment.</span></p>
+                                                                        </div>
+                                                                        <a data-display-type="block"
+                                                                            class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1646049507"
+                                                                            file="false"
+                                                                            href="https://clienthub.getjobber.com/client_hubs/0f8a4bce-b72e-403d-bb08-4a3ee566bd5b/public/work_request/new"
+                                                                            data-element-type="dButtonLinkId"
+                                                                            id="1646049507"
+                                                                            data-buttonstyle="FLAT_ROUND_ICON"
+                                                                            icon-name="dm-icon-redo" target="_blank">
+                                                                            <span class="iconBg" id="1955126771"> <span
+                                                                                    class="icon hasFontIconstar hasFontIcon dm-icon-redo"
+                                                                                    id="1130276209"></span>
+                                                                            </span>
+                                                                            <span class="text" id="1718606452">Get Free
+                                                                                Estimate</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dmFooterContainer">
+                                            <div id="fcontainer"
+                                                class="u_fcontainer f_hcontainer dmFooter p_hfcontainer">
+                                                <div dm:templateorder="250" class="dmFooterResp generalFooter"
+                                                    id="1943048428">
+                                                    <div class="u_1046427888 dmRespRow dmSectionNoParallax hasBackgroundOverlay"
+                                                        style="text-align: center;" id="1046427888"
+                                                        data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9saXJwLmNkbi13ZWJzaXRlLmNvbS9tZC91bnNwbGFzaC9kbXMzcmVwL211bHRpL29wdC9waG90by0xNTAyOTE5MDg4NzgzLTExYzg0NTQ1NWNiOS0xOTIwdy5qcGciXX0=">
+                                                        <div class="dmRespColsWrapper" id="1439021682">
+                                                            <div class="u_1378873470 dmRespCol small-12 large-3 medium-3"
+                                                                id="1378873470">
+                                                                <div class="u_1606972294 imageWidget align-center hide-for-small"
+                                                                    data-element-type="image" data-widget-type="image"
+                                                                    id="1606972294"><img
+                                                                        src="https://lirp.cdn-website.com/be6f1ddd/dms3rep/multi/opt/400png-1920w.png"
+                                                                        id="1832390094" class=""
+                                                                        data-dm-image-path="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/400png.png"
+                                                                        alt="jet-pest-control-logo-footer"
+                                                                        onerror="handleImageLoadError(this)" /></div>
+                                                            </div>
+                                                            <div class="u_1269891330 dmRespCol small-12 large-4 medium-4"
+                                                                id="1269891330">
+                                                                <div class="dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1189844501"
+                                                                    style="transition: opacity 1s ease-in-out 0s;">
+                                                                    <p class="text-align-center"><span
+                                                                            style="font-weight: 400; font-family: Lato; color: rgb(255, 255, 255); display: initial;">Contact
+                                                                            Us</span></p>
+                                                                </div>
+                                                                <div class="dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1499219684"
+                                                                    style="transition: opacity 1s ease-in-out 0s;"
+                                                                    data-uw-styling-context="true">
+                                                                    <p class="text-align-center size-20 m-size-20"><span
+                                                                            style="font-weight: 100; display: initial;"
+                                                                            m-font-size-set="true"
+                                                                            class="m-font-size-20">&nbsp;</span><a
+                                                                            href="tel:718-710-0330" type="call"
+                                                                            class="font-size-20 m-font-size-20"
+                                                                            style="font-weight: 400; display: initial; color: rgb(255, 255, 255); font-family: Lato;"
+                                                                            m-font-size-set="true">718-710-0330</a></p>
+                                                                    <p class="text-align-center size-20 m-size-20"><a
+                                                                            href="mailto:info@jetpestcontrol.com"
+                                                                            type="email"
+                                                                            class="font-size-20 m-font-size-20"
+                                                                            style="color: rgb(255, 255, 255); font-weight: 400; font-family: Lato; display: initial;"
+                                                                            m-font-size-set="true">info@jetpestcontrol.com</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="u_1242913845 dmRespCol small-12 large-2 medium-2"
+                                                                id="1242913845">
+                                                                <div class="u_1913925359 dmNewParagraph hide-for-small"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1913925359"
+                                                                    style="transition: opacity 1s ease-in-out 0s;">
+                                                                    <p class="text-align-center"><span
+                                                                            style="display: initial; color: rgb(255, 255, 255); font-family: Lato; font-weight: 400;">Menu</span>
+                                                                    </p>
+                                                                </div>
+                                                                <nav class="u_1610381971 unifiednav_vertical effect-text-fill hide-for-small main-navigation unifiednav dmLinksMenu"
+                                                                    role="navigation"
+                                                                    layout-main="vertical_nav_layout_4" layout-sub=""
+                                                                    data-show-vertical-sub-items="HOVER" id="1610381971"
+                                                                    dmle_extension="onelinksmenu"
+                                                                    data-element-type="onelinksmenu"
+                                                                    data-logo-src="https://irp-cdn.multiscreensite.com/51ad1bc168af4d1e978024526431e3b5/dms3rep/multi/desktop/logo-02.svg"
+                                                                    alt="" data-nav-structure="VERTICAL" wr="true"
+                                                                    icon="true" surround="true" adwords=""
+                                                                    navigation-id="unifiedNav">
+                                                                    <ul class="unifiednav__container  "
+                                                                        data-auto="navigation-pages">
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="/"
+                                                                                class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  "
+                                                                                target="" data-target-page-alias=""
+                                                                                data-auto="selected-page"> <span
+                                                                                    class="nav-item-text "
+                                                                                    data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101147805  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="/#AboutUs"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101793203  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           About Us
+          " data-auto="page-text-style">About Us<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../privacy-policy/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101280382  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Privacy Policy
+          " data-auto="page-text-style">Privacy Policy<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101508606  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Services
+        " data-auto="page-text-style">Services<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../ants/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101422677  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Ants
+          " data-auto="page-text-style">Ants<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../bed-bugs/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101512179  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Bed Bugs
+          " data-auto="page-text-style">Bed Bugs<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../roach-exterminator/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101913227  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Roaches
+          " data-auto="page-text-style">Roaches<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../rodents/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101461926  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Rodents
+          " data-auto="page-text-style">Rodents<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../fleas/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101319533  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Fleas
+          " data-auto="page-text-style">Fleas<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../other-pests/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101799595  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Other Pests
+          " data-auto="page-text-style">Other Pests<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="../blog/index.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101124249  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Blog
+        " data-auto="page-text-style">Blog<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101141498  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../contact-info/index.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101491514  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Contact Info
+          " data-auto="page-text-style">Contact Info<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="../contact-info/index.html#ServiceArea"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101602796  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="
+           Service Areas
+          " data-auto="page-text-style">Service Areas<span class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="/#Reviews"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101182968  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         Reviews
+        " data-auto="page-text-style">Reviews<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="../what-is-it/index.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_01010172904  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="
+         What Is It
+        " data-auto="page-text-style">What Is It<span class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                            <div class="u_1296944059 dmRespCol small-12 large-3 medium-3"
+                                                                id="1296944059">
+                                                                <div class="u_1385024360 align-center text-align-center dmSocialHub"
+                                                                    id="1385024360" dmle_extension="social_hub"
+                                                                    data-element-type="social_hub" wr="true" networks=""
+                                                                    icon="true" surround="true" adwords="">
+                                                                    <div class="socialHubWrapper">
+                                                                        <div class="socialHubInnerDiv "> <a
+                                                                                href="https://facebook.com/JetPest"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                            <a href="https://google.com/maps/place/"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;GoogleMyBusiness&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialGoogleMyBusiness dm-social-icons-google-my-business oneIcon socialHubIcon style8"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                            <a href="https://www.instagram.com/jetpestcontrol/"
+                                                                                target="_blank"
+                                                                                dm_dont_rewrite_url="true"
+                                                                                onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)">
+                                                                                <span
+                                                                                    class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8"
+                                                                                    data-hover-effect=""></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dmRespRow u_1088758833" id="1088758833">
+                                                        <div class="dmRespColsWrapper" id="1698721461">
+                                                            <div class="dmRespCol large-12 medium-12 small-12 u_1380421573"
+                                                                id="1380421573">
+                                                                <div class="u_1941585523 widget-1f5975 dmCustomWidget"
+                                                                    data-lazy-load="" id="1941585523"
+                                                                    dmle_extension="custom_extension"
+                                                                    data-element-type="custom_extension" icon="false"
+                                                                    surround="false"
+                                                                    data-widget-id="1f5975986930429f819d4cd2154b5c4a"
+                                                                    data-widget-version="22"
+                                                                    data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPkFsbCBSaWdodHMgUmVzZXJ2ZWQgfCBKZXQgUGVzdCBDb250cm9sPC9wPiJ9">
+                                                                    <div class="copyright">
+                                                                        <div>&copy; 2022&nbsp;</div>
+                                                                        <div>
+                                                                            <p class="rteBlock">All Rights Reserved |
+                                                                                Jet Pest Control</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="1236746004" dmle_extension="powered_by"
+                                                    data-element-type="powered_by" icon="true" surround="false"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="showOnMedium layout-drawer-hamburger hamburger-on-header"
+                                        id="layout-drawer-hamburger" role="button" aria-label="menu opener"
+                                        tabindex="0"> <span class="hamburger__slice"></span>
+                                        <span class="hamburger__slice"></span>
+                                        <span class="hamburger__slice"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  Add full CSS and Javascript before the close tag of the body if needed -->
+    <!-- ========= JS Section ========= -->
+
+    <script>
+        var isWLR = true;
+
+        window.customWidgetsFunctions = {};
+        window.customWidgetsStrings = {};
+        window.collections = {};
+        window.currentLanguage = "ENGLISH"
+        window.isSitePreview = false;
+    </script>
+    <script type="text/javascript">
+
+        var d_version = "14..64";
+        var build = "2022-05-26T12_51_37";
+        window['v' + 'ersion'] = d_version;
+
+        function buildEditorParent() {
+            window.isMultiScreen = true;
+            window.editorParent = {};
+            window.previewParent = {};
+            window.assetsCacheQueryParam = "?version=2022-05-26T12_51_37";
+            try {
+                var _p = window.parent;
+                if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                    window.editorParent = _p;
+                }
+                else if (_p.isSitePreview) {
+                    window.previewParent = _p;
+                }
+            } catch (e) {
+
+            }
+        }
+
+        buildEditorParent();
+
+
+    </script>
+    <!-- Load jQuery -->
+    <script type="text/javascript" src="https://static.cdn-website.com/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- End Load jQuery -->
+
+    <!-- Injecting site-wide before scripts -->
+    <!-- End Injecting site-wide to the head -->
+
+
+    <script>
+        var jquery = window.$;
+        Object.defineProperty(window, '$', {
+            get() {
+                return jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    </script>
+    <script>
+        window.cookiesNotificationMarkupPreview = 'null';
+    </script>
+    <script>
+        var shouldMonitorImages = false;
+        var numOfImageLoadErrorsReported = 0;
+        if (shouldMonitorImages) {
+            window.addEventListener('error', function (event) {
+                // log secured resources failures
+                if (event.target && event.target.src && event.target.src.includes
+                    && event.target.src.includes('/s/')
+                    && !event.target.src.includes('/_dm/s/rt/')) {
+                    if (!window.fetch || numOfImageLoadErrorsReported > 4) {
+                        return;
+                    }
+                    try {
+                        numOfImageLoadErrorsReported++;
+                        return fetch('/_dm/s/rt/actions/log/INFO', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                data: {
+                                    tags: 'imageFailedToLoad',
+                                    eventType: event.type,
+                                    image: event.target.src,
+                                    href: window.location.href
+                                }
+                            })
+                        });
+                    } catch (error) {
+                        console.log(error);
+                    }
+
+                }
+            }, { capture: true });
+        }
+
+    </script>
+    <!-- HEAD RT JS Include -->
+    <script>
+        window.INSITE = window.INSITE || {};
+        window.INSITE.device = "desktop";
+        window.rtCommonProps = {};
+        rtCommonProps["rt.ajax.ajaxScriptsFix"] = true;
+        rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+        rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+        rtCommonProps["facebook.accessToken"] = '126515034112906|8vv7JhnEegS8qz43fIOZjxGZReA';
+        rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+        rtCommonProps["feature.flag.contactUsNewForm"] = 'true';
+        rtCommonProps["inlineEditGrid.snap"] = true;
+        rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+        rtCommonProps["rt.pushnotifs.force.button"] = true;
+        rtCommonProps["google.places.key"] = 'AIzaSyBAwUOqPUB1CU31yDztoZYaUE7sPv4ktEI';
+        rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+        rtCommonProps["common.mapbox.js.override"] = false;
+        rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+        rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+        rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+        rtCommonProps["isCoverage.test"] = false;
+        rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+        rtCommonProps["feature.flag.mappy.kml"] = false;
+        rtCommonProps["common.resources.dist.cdn"] = true;
+        rtCommonProps["common.build.dist.folder"] = 'production/2564';
+        rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+        rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/2564';
+        rtCommonProps["import.images.storage.useImageCDN"] = true;
+        rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] = true;
+        rtCommonProps["feature.flag.runtime.photoswipe.fix"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.enabled"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] = true;
+        rtCommonProps["feature.flag.sites.google.analytics.gtag"] = true;
+
+        rtCommonProps['common.mapsProvider'] = 'mapbox';
+        rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+        rtCommonProps['common.geocodeProvider'] = 'here';
+        rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+        rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+        rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+        rtCommonProps['common.map.defaults.strokeSize'] = '2';
+        rtCommonProps['server.for.resources'] = '';
+        rtCommonProps['feature.flag.lazy.widgets'] = true;
+        rtCommonProps['editor.infra.noPrefixedChanges'] = true;
+        rtCommonProps['feature.flag.single.wow'] = false;
+        rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+        rtCommonProps['feature.flag.mark.anchors'] = true;
+        rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+        rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+        rtCommonProps["images.sizes.small"] = 160;
+        rtCommonProps["images.sizes.mobile"] = 640;
+        rtCommonProps["images.sizes.tablet"] = 1280;
+        rtCommonProps["images.sizes.desktop"] = 1920;
+        rtCommonProps["modules.resources.cdn"] = true;
+        rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+        rtCommonProps["facebook.api.version"] = '7.0';
+        rtCommonProps["runtime.save.restore.function.bind"] = true;
+        rtCommonProps["feature.flag.photo.gallery.exact.size"] = false;
+        rtCommonProps["feature.flag.photo.gallery.lazy"] = true;
+        rtCommonProps["store.handleItemId.enabled"] = true;
+        rtCommonProps["new.store.fix.ecwid.back.bug"] = true;
+        rtCommonProps["new.store.accountPage.ecwid.signIn.fix"] = true;
+        rtCommonProps["fix.ecwid.sign.in.page.with.return.url"] = true;
+        rtCommonProps["site.runtime.video.background.ssr"] = true;
+        rtCommonProps["geocode.search.localize"] = false;
+        rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.enabled"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] = false;
+    </script>
+    <script
+        src="https://static.cdn-website.com/mnlt/production/2564/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"></script>
+    <!-- End of HEAD RT JS Include -->
+    <script>jQuery.DM.updateWidthAndHeight();
+        $(window).resize(function () {
+
+        });
+        $(window).bind("orientationchange", function (e) {
+            $.layoutManager.initLayout();
+
+        });
+        $(document).resize(function () {
+
+        });
+    </script>
+
+    <script type="text/javascript" id="d_track_campaign">
+        (function () {
+            var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+            if (campaign && campaign != null && campaign.length > 1) {
+                campaign = campaign[1];
+                document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24 * 60 * 60 * 1000 + ";domain=" + window.location.hostname + ";path=/";
+            }
+        }());
+    </script>
+    <script type="text/javascript">
+        var _dm_gaq = {};
+        var _gaq = _gaq || [];
+        var _dm_insite = [];
+    </script>
+
+    </script>
+    <script type="text/javascript" id="d_track_sp">
+        ; (function (p, l, o, w, i, n, g) {
+            if (!p[i]) {
+                p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+                p.GlobalSnowplowNamespace.push(i); p[i] = function () {
+                    (p[i].q = p[i].q || []).push(arguments)
+                }; p[i].q = p[i].q || []; n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.async = 1;
+                n.src = w; g.parentNode.insertBefore(n, g)
+            }
+        }(window, document, "script", "//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js", "snowplow"));
+        window.dmsnowplow = window.snowplow;
+
+        dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+            appId: 'be6f1ddd'
+        });
+
+        dmsnowplow('trackPageView')
+        $.each(_dm_insite, function (idx, rule) {
+            //('trackStructEvent', 'category','action','label','property','value');
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            $(document).ready(function () {
+                $.DM.events.trigger('event-ruleTriggered', { value: rule })
+            }
+            );
+        });
+    </script>
+    <div style="display:none;" id="P6iryBW0Wu"></div>
+
+    <!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="fb-root" data-locale="en"></div>
+    <!-- Alias: be6f1ddd -->
+    <div class="dmPopupMask" id="dmPopupMask"></div>
+    <div id="dmPopup" class="dmPopup">
+        <div class="dmPopupCloseWrapper">
+            <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div>
+        </div>
+        <div class="dmPopupTitle"> <span></span> Share by:</div>
+        <div class="data"></div>
+    </div>
+    <script id="d_track_personalization">
+        // Collects client data and updates cookies used by smart sites
+        var expireDays = 365, visitLength = 30 * 60000;
+        $.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+        function setSmartSiteCookies() {
+            setSmartSiteCookiesInternal("dm_this_page_view", "dm_last_page_view", "dm_total_visits", "dm_last_visit");
+        }
+        $.DM.events.on("afterAjax", setSmartSiteCookies);
+        setSmartSiteCookies();
+    </script>
+    <script type="text/javascript">
+
+        Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+
+        Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+        Parameters.HomeLinkText = 'Home';
+    </script>
+
+    <script>
+
+        jQuery(window).on('load', function () {
+            try {
+                jQuery.DM.updateIOSHeight();
+            } catch (e) {
+            }
+
+        });
+    </script>
+    <script>
+        dmAPI.loadScript(
+            window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+            function () {
+                dmAPI.runOnReady('lozadInit', function () {
+                    window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                        img.addEventListener('load', function (event) {
+                            var img = event.target;
+                            img.style.filter = 'blur(0)';
+                            setTimeout(function () {
+                                $(img).closest('.imageWidget').addClass('lazyLoaded');
+                            }, 250)
+                        });
+                    });
+                    lozad('.lazy', {
+                        threshold: 0.1,
+                        loaded: function (element) {
+                            if (element.getAttribute('data-background-image')) {
+                                element.style.setProperty(
+                                    'background-image',
+                                    "url('" + element.getAttribute('data-background-image') + "')",
+                                    "important"
+                                );
+                            }
+                        }
+                    }).observe();
+                });
+            }
+        );
+    </script>
+    <script id="ssr-script" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+
+        var doRelocation = function () {
+
+            var currentWidth = window.innerWidth,
+                breakpoint = 800,
+                newLocation = '../../mobile/roach-exterminator/index.html';
+
+            if (currentWidth < breakpoint) {
+                window.location.replace(newLocation);
+            }
+
+        }
+
+        doRelocation();
+
+        window.addEventListener('resize', doRelocation);
+
+    </script>
+    <!--  End Script tags -->
+
+    <!--  Site Wide Html Markup -->
+    <!--  Site Wide Html Markup -->
+</body>
+
+</html>

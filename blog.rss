@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:g-custom="http://base.google.com/cns/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>jetpestcontrol</title>
+    <link>https://www.jetpestcontrol.com</link>
+    <description />
+    <atom:link href="https://www.jetpestcontrol.com/feed/rss2" type="application/rss+xml" rel="self" />
+    <item>
+      <title>How To Avoid Picking Up Bed Bugs</title>
+      <link>https://www.jetpestcontrol.com/how-to-avoid-picking-up-bed-bugs</link>
+      <description>Though it is impossible to guarantee 100% avoidance, you can take preventative measures to significantly reduce the likelihood of an infestation.</description>
+      <pubDate>Tue, 01 Mar 2022 13:28:30 GMT</pubDate>
+      <guid>https://www.jetpestcontrol.com/how-to-avoid-picking-up-bed-bugs</guid>
+      <g-custom:tags type="string" />
+      <media:content medium="image" url="https://irp.cdn-website.com/be6f1ddd/dms3rep/multi/suitcasehotelroom.png" />
+    </item>
+  </channel>
+</rss>

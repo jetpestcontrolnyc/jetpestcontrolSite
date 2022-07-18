@@ -1,0 +1,190 @@
+
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}.dmMobileBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}.dmDesktopBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}#dm [data-show-on-page-only]{display:none!important}
+
+img[width][height] {height: auto;}
+
+    body[data-page-alias="manhattan"] #dm [data-show-on-page-only="manhattan"]{
+        display: block !important;
+    }
+
+
+
+
+    
+    .widget-1f5975 .copyright {
+    font-size: 13px;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+    
+
+
+    
+
+
+
+
+    *#dm *.dmBody div.u_1100034929
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1485531707
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(/Resources/images/wallpaper-640w.jpg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1257856025
+{
+	box-shadow:rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+	-moz-box-shadow:rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+	-webkit-box-shadow:rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1484090212 .iconBg
+{
+	display:inline !important;
+}
+*#dm *.dmBody a.u_1484090212 span.icon
+{
+	color:rgb(247,247,247) !important;
+}
+*#dm *.dmBody a.u_1484090212
+{
+	background-color:rgba(0,0,0,1) !important;
+	border-color:rgba(237,27,36,1) !important;
+	border-radius:6px !important;
+	-moz-border-radius:6px !important;
+	-webkit-border-radius:6px !important;
+}
+*#dm *.dmBody a.u_1484090212:hover
+{
+	background-color:rgba(0,0,0,0) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1484090212.hover
+{
+	background-color:rgba(0,0,0,0) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1484090212:hover span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1484090212.hover span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1484090212:hover .icon
+{
+	color:rgba(0,0,0,1) !important;
+	fill:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1484090212.hover .icon
+{
+	color:rgba(0,0,0,1) !important;
+	fill:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1983432144
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1306037168
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1197833546
+{
+	background-repeat:no-repeat !important;
+	background-image:url('/Resources/images/manhattan-640w.png') !important;
+	background-size:cover !important;
+}
+
+
+
+    *#dm *.dmBody a.u_1484090212 span.text
+{
+	font-size:22px !important;
+}
+*#dm *.dmBody div.u_1197833546
+{
+	margin-left:0px !important;
+	padding-top:300px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1644722544
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1485531707
+{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left:15px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+	width:auto !important;
+	background-repeat:repeat !important;
+	background-size:auto !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1257856025
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody a.u_1484090212
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:15px !important;
+	margin-bottom:10px !important;
+	margin-right:0px !important;
+}
+
+
+
+        .font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }
+    
+
+    
+
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }

@@ -1,0 +1,210 @@
+
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}.dmMobileBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}.dmDesktopBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}#dm [data-show-on-page-only]{display:none!important}
+
+img[width][height] {height: auto;}
+
+    body[data-page-alias="bed-bugs"] #dm [data-show-on-page-only="bed-bugs"]{
+        display: block !important;
+    }
+
+
+
+
+    
+    .widget-1f5975 .copyright {
+    font-size: 13px;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+    
+
+
+    
+
+
+
+
+    *#dm *.dmBody div.u_1965312173
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(/Resources/images/bugs400-640w.png) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1965312173:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1965312173.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1965312173>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1965312173:before
+{
+	opacity:0.9 !important;
+}
+*#dm *.dmBody div.u_1965312173.before
+{
+	opacity:0.9 !important;
+}
+*#dm *.dmBody div.u_1965312173>.bgExtraLayerOverlay
+{
+	opacity:0.9 !important;
+}
+*#dm *.dmBody div.u_1897017903
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(/Resources/images/wallpaper-640w.jpg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1897017903:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1897017903.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1897017903>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1897017903:before
+{
+	opacity:0.8 !important;
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1897017903.before
+{
+	opacity:0.8 !important;
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1897017903>.bgExtraLayerOverlay
+{
+	opacity:0.8 !important;
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1205783768
+{
+	box-shadow:rgba(0,0,0,0.25) 0px 3px 11px 0px !important;
+	-moz-box-shadow:rgba(0,0,0,0.25) 0px 3px 11px 0px !important;
+	-webkit-box-shadow:rgba(0,0,0,0.25) 0px 3px 11px 0px !important;
+	border-color:rgba(255,255,255,1) !important;
+	border-width:1px !important;
+	border-style:solid !important;
+}
+*#dm *.dmBody a.u_1646049507:hover
+{
+	background-color:rgba(0,0,0,1) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody a.u_1646049507.hover
+{
+	background-color:rgba(0,0,0,1) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody a.u_1646049507
+{
+	background-color:rgba(0,0,0,0) !important;
+	border-color:rgba(237,27,36,1) !important;
+	border-radius:6px !important;
+	-moz-border-radius:6px !important;
+	-webkit-border-radius:6px !important;
+}
+*#dm *.dmBody a.u_1646049507 .iconBg
+{
+	display:inline !important;
+}
+*#dm *.dmBody a.u_1646049507 span.icon
+{
+	color:rgb(247,247,247) !important;
+}
+*#dm *.dmBody nav.u_1187815373
+{
+	color:white !important;
+}
+
+
+
+    *#dm *.dmBody div.u_1965312173
+{
+	background-repeat:repeat !important;
+	background-size:auto !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1897017903
+{
+	background-repeat:repeat !important;
+	background-size:auto !important;
+	background-position:50% 50% !important;
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left:0px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody a.u_1646049507 span.text
+{
+	font-size:22px !important;
+}
+*#dm *.dmBody div.u_1205783768
+{
+	margin-left:15px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:15px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody a.u_1646049507
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:15px !important;
+	margin-bottom:10px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1628651637
+{
+	width:250px !important;
+	height:369px !important;
+}
+
+
+
+        .font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-26, .size-26, .size-26 > font { font-size: 26px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-26, .size-26, .size-26 > font { font-size: 26px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-26, .size-26, .size-26 > font { font-size: 26px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-26, .size-26, .size-26 > font { font-size: 26px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-48, .dmMobileBody .m-size-48, .dmMobileBody .m-size-48 > font { font-size: 48px !important; }.dmMobileBody .m-font-size-48, .dmMobileBody .m-size-48, .dmMobileBody .m-size-48 > font { font-size: 48px !important; }.dmMobileBody .m-font-size-21, .dmMobileBody .m-size-21, .dmMobileBody .m-size-21 > font { font-size: 21px !important; }.dmMobileBody .m-font-size-21, .dmMobileBody .m-size-21, .dmMobileBody .m-size-21 > font { font-size: 21px !important; }.dmMobileBody .m-font-size-21, .dmMobileBody .m-size-21, .dmMobileBody .m-size-21 > font { font-size: 21px !important; }.dmMobileBody .m-font-size-21, .dmMobileBody .m-size-21, .dmMobileBody .m-size-21 > font { font-size: 21px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }.dmMobileBody .m-font-size-20, .dmMobileBody .m-size-20, .dmMobileBody .m-size-20 > font { font-size: 20px !important; }
+    
+
+    
+
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
